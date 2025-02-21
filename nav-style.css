@@ -1,0 +1,97 @@
+/* Variables CSS */
+:root{
+    --color-font: #EFFFFB;
+    --color-background: #272727;
+}
+
+/*Formatear valores a 0*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: 'Josefin Sanz';
+    src: url(Fuentes/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-background);
+}
+
+header{
+    height: 10%;
+    padding: 1%;
+    /* background-color: var(--color-backgrownd); */
+    color: var(--color-font);
+    display: grid;
+    grid-template-columns: 1fr 25fr;
+    user-select: none;
+}
+
+header div{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div span{
+    /* background-color: chocolate; */
+    height: 60%;
+    width: 60%;
+    text-align: center;
+}
+
+header div span:hover{
+    color: #50D890 !important;
+    cursor: pointer !important;
+}
+
+header nav{
+    /* background-color: red; */
+    height: 100%;
+    display: grid;
+    align-content: stretch;
+}
+
+header nav ul{
+    /* background-color: burlywood; */
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: auto;
+}
+
+header nav ul li{
+    /* background-color: chartreuse; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a{
+    /* background-color: aqua; */
+    display: flex;
+    width: 80%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-font);
+    font-family: Josefin Sanz;
+    font-size: 20px;
+}
+
+header nav ul li a:hover{
+    color: #50D890 !important;
+    background-color: #1b1b1ba7 !important;
+}

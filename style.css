@@ -1,0 +1,158 @@
+/* Variables CSS */
+:root{
+    --color-font: #EFFFFB;
+    --color-background: #272727;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(Fuentes/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+/* Color de texto */
+.texto{
+    color: var(--color-font);
+}
+
+main {
+    /* background-color: blue; */
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* main section{
+    background-color: aliceblue;
+} */
+
+.perfil article{
+    /* background-color: --color-background; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.perfil article div{
+    background-image: url(Imagenes/Perfil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 39vh;
+    width: 39vh;
+    border-radius: 100%;
+}
+
+.perfil article h2{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    height: auto;
+    font-family: Josefin Sans;
+    font-size: 5vh;
+}
+
+.tecnologias{
+    display: grid;
+    height: 100%;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 6%;
+    gap: 6%;
+    user-select: none;
+}
+
+/* .tecnologias article{
+    background-color: aqua;
+    border: 1px blue solid;
+    border-radius: 20%;
+} */
+
+#elemento1{
+    background-image: url(Imagenes/html.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#elemento2{
+    background-image: url(Imagenes/javascript.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#elemento3{
+    background-image: url(Imagenes/css.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#elemento4{
+    background-image: url(Imagenes/python.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#elemento5{
+    background-image: url(Imagenes/c++.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#elemento6{
+    background-image: url(Imagenes/java.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Animacion */
+
+@keyframes animacion{
+    0% {transform: scale(100%);}
+    100%{transform: scale(120%);}
+}
+
+#elemento1:hover{
+    width: 100%;
+    height: 100%;
+    animation: animacion 1.5s ease-in-out infinite alternate;
+}
+
+#elemento2:hover{
+    width: 100%;
+    height: 100%;
+    animation: animacion 1.5s ease-in-out infinite alternate;
+}
+
+#elemento3:hover{
+    width: 100%;
+    height: 100%;
+    animation: animacion 1.5s ease-in-out infinite alternate;
+}
+
+#elemento4:hover{
+    width: 100%;
+    height: 100%;
+    animation: animacion 1.5s ease-in-out infinite alternate;
+}
+
+#elemento5:hover{
+    width: 100%;
+    height: 100%;
+    animation: animacion 1.5s ease-in-out infinite alternate;
+}
+
+#elemento6:hover{
+    animation: animacion 1.5s ease-in-out infinite alternate;
+}
+
