@@ -26,12 +26,12 @@ html, body{
 
 header{
     height: 10%;
-    padding: 1%;
-    /* background-color: var(--color-backgrownd); */
+    padding: 0.5% 0;
     color: var(--color-font);
     display: grid;
     grid-template-columns: 1fr 25fr;
     user-select: none;
+    border-bottom: 0.2vh solid black;
 }
 
 header div{

@@ -27,10 +27,13 @@ main {
     background-color: aliceblue;
 } */
 
+
 .perfil article{
     /* background-color: --color-background; */
     height: 100%;
     width: 100%;
+    /* background-color: rgba(111, 112, 112, 0.349); */
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -39,12 +42,30 @@ main {
 
 .perfil article div{
     background-image: url(Imagenes/Perfil.jpg);
+    box-shadow: 0.5vh 0.5vh 2vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 39vh;
     width: 39vh;
     border-radius: 100%;
+}
+
+@keyframes rotacion{
+    0%{
+        transform: rotatey(0deg);
+    }
+    100%{
+        transform: rotatey(180deg);
+        background-image: url(Imagenes/mimi.jpg);
+    }
+    
+}
+
+
+
+.perfil article div:hover{
+    animation: rotacion 1s linear both alternate;
 }
 
 .perfil article h2{
@@ -72,8 +93,13 @@ main {
     border-radius: 20%;
 } */
 
+.tecnologias article{
+    background-color: rgba(111, 112, 112, 0.349);
+    border-radius: 25%;
+}
+
 #elemento1{
-    background-image: url(Imagenes/html.png);
+    background-image: url(Imagenes/html.png);   
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
