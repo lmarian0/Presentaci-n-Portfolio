@@ -5,8 +5,8 @@
 }
 
 footer{
-    height: 15%;
-    width: 100%;
+    height: 10vh;
+    width: 100vw;
     /* background-color: brown; */
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,7 @@ footer div:hover{
     i{
         color: rgba(255, 55, 55, 0.65) !important;
     }
+    cursor: pointer;
 }
 
 footer ul{
