@@ -1,3 +1,4 @@
+//Aparicion de respuestas a las preguntas cuando se clickea
 function visible(elementid){
     let elemento = document.getElementById(elementid);
     let estilo = window.getComputedStyle(elemento);
@@ -9,9 +10,11 @@ function visible(elementid){
         elemento.style.display="none";
     }
 }
-
-let t = 200;
-
+//tiempo entre escritura de cada caracter
+let t_carac = 200;
+//tiempo entre ejecuciones de la funcion
+let t_ejec = 5000;
+//Funcion recursiva para escritura de nombre y cargo del perfil
 let maquina_escribir = (nombre, cargo) =>{
     let arr_nombre = nombre.split('');
     let arr_cargo = cargo.split('');
@@ -27,10 +30,15 @@ let maquina_escribir = (nombre, cargo) =>{
         }
         if(i===arr_nombre.length && j===arr_cargo.length){
             clearInterval(escribir);
+            setTimeout(() => {
+                document.getElementById("nombre").innerHTML="";
+                document.getElementById("cargo").innerHTML="";
+                maquina_escribir(nombre, cargo);
+            }, t_ejec);
         }
-    },t);
+    },t_carac);
 }
-
+//Llamada a la funcion
 maquina_escribir("Luis Mariano Rivera", "Jr. Developer");
 
 
