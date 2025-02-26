@@ -41,7 +41,7 @@ main {
 }
 
 .perfil article div{
-    background-image: url(Imagenes/Perfil3.jpg);
+    background-image: url(Imagenes/Perfil_index.jpg);
     box-shadow: 0.5vh 0.5vh 2vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ main {
     }
     100%{
         transform: rotatey(180deg);
-        background-image: url(Imagenes/Perfil2.jpg);
+        background-image: url(Imagenes/hacker.jpg);
     }
     
 }

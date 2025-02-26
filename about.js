@@ -3,7 +3,7 @@ function visible(elementid){
     let estilo = window.getComputedStyle(elemento);
     console.log(estilo.display);
     if(estilo.display=="none"){
-        elemento.style.display="flex";
+        elemento.style.display="contents";
     }else{
         elemento.style.display="none";
     }
