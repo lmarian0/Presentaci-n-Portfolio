@@ -43,8 +43,8 @@ main section{
     margin-top: 5vh;
     display: flex;
     justify-content: center;
-    height: 40vh;
-    width: 40vh;
+    height: 42vh;
+    width: 42vh;
     background: url("Imagenes/Perfil_about.jpg");
     background-position: center;
     background-size: cover;
@@ -62,7 +62,7 @@ main section{
     width: 3vh;
     box-shadow: inset 0vh 0vh 1.2vh 0.4vh rgb(47, 47, 47),
         0vh 0vh 1vh 0.2vh rgb(12, 12, 12);
-    background-color: rgb(120, 120, 120);
+    background-color: rgb(130, 130, 130);
     border: 0.2vh solid rgba(42, 42, 42, 0.918);
 }
 
@@ -71,7 +71,7 @@ main section{
 }
 
 
-#nombre{
+#info_perfil{
     height: 40%;
     width: 100%;
     display: flex;
@@ -79,6 +79,7 @@ main section{
     align-items: center;
     justify-content: center;
     font-family: "Josefin Sanz";
+    user-select: none;
     /* background-color: blue; */
 }
 
@@ -123,6 +124,16 @@ main section{
 
 .informacion{
     display: none;
+    opacity: 0;
+}
+
+@keyframes visibilidad {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .texto_perfil div p{
