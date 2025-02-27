@@ -57,7 +57,7 @@ main {
     }
     100%{
         transform: rotatey(180deg);
-        background-image: url(Imagenes/hacker.jpg);
+        background-image: url(Imagenes/programador.png);
     }
     
 }
@@ -65,7 +65,7 @@ main {
 
 
 .perfil article div:hover{
-    animation: rotacion 1s linear both alternate;
+    animation: rotacion 500ms linear both alternate;
 }
 
 .perfil article h2{
@@ -99,43 +99,31 @@ main {
 }
 
 #elemento1{
-    background-image: url(Imagenes/html5.png);   
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(Imagenes/html5.png);
 }
 
 #elemento2{
     background-image: url(Imagenes/javascript.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 
 #elemento3{
     background-image: url(Imagenes/css3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #elemento4{
     background-image: url(Imagenes/python.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #elemento5{
     background-image: url(Imagenes/c++.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #elemento6{
-    background-image: url(Imagenes/icon-java2.png);
+    background-image: url(Imagenes/java.png);
+}
+
+.elementos{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,37 +136,8 @@ main {
     100%{transform: scale(120%);}
 }
 
-#elemento1:hover{
+.elementos:hover{
     width: 100%;
     height: 100%;
-    animation: animacion 1.5s ease-in-out infinite alternate;
+    animation: animacion 1.2s ease-in-out infinite alternate;
 }
-
-#elemento2:hover{
-    width: 100%;
-    height: 100%;
-    animation: animacion 1.5s ease-in-out infinite alternate;
-}
-
-#elemento3:hover{
-    width: 100%;
-    height: 100%;
-    animation: animacion 1.5s ease-in-out infinite alternate;
-}
-
-#elemento4:hover{
-    width: 100%;
-    height: 100%;
-    animation: animacion 1.5s ease-in-out infinite alternate;
-}
-
-#elemento5:hover{
-    width: 100%;
-    height: 100%;
-    animation: animacion 1.5s ease-in-out infinite alternate;
-}
-
-#elemento6:hover{
-    animation: animacion 1.5s ease-in-out infinite alternate;
-}
-

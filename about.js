@@ -1,9 +1,12 @@
 //Aparicion de respuestas a las preguntas cuando se clickea
-function visible(elementid){
-    let elemento = document.getElementById(elementid);
+function visible(elementoid){
+    let elemento = document.getElementById(elementoid);
     let estilo = window.getComputedStyle(elemento);
     console.log(estilo.display);
     if(estilo.display=="none"){
+        document.getElementById("p1").style.display="none";
+        document.getElementById("p2").style.display="none";
+        document.getElementById("p3").style.display="none";
         elemento.style.display="block";
         elemento.style.animation="visibilidad 800ms cubic-bezier(0,.73,.14,.92) forwards";
     }else{
@@ -13,7 +16,7 @@ function visible(elementid){
 //tiempo entre escritura de cada caracter
 let t_carac = 200;
 //tiempo entre ejecuciones de la funcion
-let t_ejec = 5000;
+let t_ejec = 8000;
 //Funcion recursiva para escritura de nombre y cargo del perfil
 let maquina_escribir = (nombre, cargo) =>{
     let arr_nombre = nombre.split('');
@@ -24,10 +27,13 @@ let maquina_escribir = (nombre, cargo) =>{
             document.getElementById("nombre").innerHTML += arr_nombre[i];
             i++;
         }
-        if(j<arr_cargo.length){
-            document.getElementById("cargo").innerHTML += arr_cargo[j];
-            j++;
-        }
+        setTimeout(() => {
+            if(j<arr_cargo.length){
+                document.getElementById("cargo").innerHTML += arr_cargo[j];
+                j++;
+            }
+        }, (arr_nombre.length+1)*t_carac);
+
         if(i===arr_nombre.length && j===arr_cargo.length){
             clearInterval(escribir);
             setTimeout(() => {
@@ -38,9 +44,9 @@ let maquina_escribir = (nombre, cargo) =>{
         }
     },t_carac);
 }
-//Llamada a la funcion
-maquina_escribir("Luis Mariano Rivera", "Jr. Developer");
 
+//Llamada a la funcion 
+maquina_escribir("Luis Mariano Rivera", "Jr. Developer");
 
 
 

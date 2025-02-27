@@ -52,7 +52,27 @@ main section{
     border: 1vh solid var(--color-font);
     border-radius: 3%;
     rotate: 3deg;
+    box-shadow: inset 0 0 1vh 0.5vh var(--color-background);
     /* background-color: blueviolet; */
+}
+
+@keyframes rotacion {
+    from{
+        rotate: 3deg;
+        transform: scale(1);
+    }to{
+        rotate: 0deg;
+        transform: scale(1.3);
+    }
+}
+
+
+#foto:hover{
+    rotate: 0deg;
+    animation: rotacion 0.7s cubic-bezier(0,1.7,.57,.86) forwards;
+    .clavo{
+        display: none;
+    }
 }
 
 .clavo{
@@ -65,11 +85,6 @@ main section{
     background-color: rgb(130, 130, 130);
     border: 0.2vh solid rgba(42, 42, 42, 0.918);
 }
-
-#foto:hover{
-    rotate: 0deg;
-}
-
 
 #info_perfil{
     height: 40%;
