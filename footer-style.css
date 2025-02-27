@@ -5,12 +5,13 @@
 }
 
 footer{
-    height: 10vh;
+    height: 10%;
     width: 100vw;
     /* background-color: brown; */
     display: flex;
     justify-content: space-between;
 }
+
 
 footer div{
     padding: 0% 1%;

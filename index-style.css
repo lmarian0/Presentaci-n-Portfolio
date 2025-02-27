@@ -57,7 +57,7 @@ main {
     }
     100%{
         transform: rotatey(180deg);
-        background-image: url(Imagenes/programador.png);
+        background-image: url(Imagenes/programador.jpg);
     }
     
 }

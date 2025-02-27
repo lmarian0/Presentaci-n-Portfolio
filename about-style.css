@@ -71,7 +71,13 @@ main section{
     rotate: 0deg;
     animation: rotacion 0.7s cubic-bezier(0,1.7,.57,.86) forwards;
     .clavo{
-        display: none;
+        background-color: transparent;
+        background-image: url(Imagenes/Agujero.png);
+        border: none;
+        box-shadow: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
