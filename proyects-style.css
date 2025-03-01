@@ -1,4 +1,237 @@
+/* Variables CSS */
+:root{
+    --color-font: #EFFFFB;
+    --color-background: #272727;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: 'Josefin Sanz';
+    src: url(Fuentes/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
 /* Color de texto */
 .texto{
     color: var(--color-font);
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#proyectos{
+    /* background-color: brown; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_botones{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.botones{
+    width: 25%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vh;
+    cursor: pointer;
+    /* background-color: rgb(108, 74, 30); */
+}
+
+
+.botones:hover{
+    background-color: #1b1b1ba7;
+}
+
+.contenedor_fotos{
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.fotos{
+    height: 50vh;
+    width: 50vh;
+    border: 1vh solid var(--color-font);
+    border-radius: 3%;
+    position: absolute;
+    box-shadow: inset 0 0 1vh 0.5vh var(--color-background);
+}
+
+#foto1{
+    z-index: 100;
+    /* background-color: red; */
+    transform: translateX(2.5vw) rotate(7deg);
+    background: url(Proyectos_fotos/1_Snake.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#foto2{
+    z-index: 50;
+    /* background-color: blue; */
+    transform: translateX(-2.5vw) rotate(-7deg);
+    background: url(Proyectos_fotos/2_Nave.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#foto3{
+    z-index: 10;
+    /* background-color: aqua; */
+    background: url(Proyectos_fotos/5_Portfolio.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#links{
+    /* background-color: blueviolet; */
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links ul li{
+    width: 20%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3vh solid var(--color-font);
+    /* box-shadow: inset 0 0 0.7vh 0.2vh var(--color-font); */
+    /* background-color: rgb(15, 15, 15); */
+}
+
+#links ul li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Josefin Sanz";
+    font-size: 3vh;
+    width: 100%;
+    height: 100%;
+}
+
+#giturl:hover{
+    background-color: #353535;
+    color: #EFFFFB !important;
+}
+
+.animacion_encimar{
+    animation: encimar 1s ease-in-out forwards;
+}
+
+.animacion_cambio_derecha{
+    animation: cambio_derecha 1s ease forwards;
+}
+
+.animacion_cambio_izquierda{
+    animation: cambio_izquierda 1s ease forwards;
+}
+
+.animacion_rotar_derecha{
+    animation: rotar_derecha 1s ease forwards;
+}
+
+.animacion_rotar_izquierda{
+    animation: rotar_izquierda 1s ease forwards;
+}
+
+.animacion_cambio_fondo{
+    animation: cambio_fondo 700ms ease-out backwards;
+}
+
+@keyframes encimar {
+    0%{
+    }
+    100%{
+        transform: translateX(0);
+        rotate: 0;
+    }
+}
+
+@keyframes cambio_derecha {
+    0%{
+    }
+    50%{
+        transform: translateX(100%);
+        z-index: 0;
+    }
+    100%{
+        transform: translateX(0);
+        z-index: 0;
+    }
+}
+
+@keyframes cambio_izquierda {
+    0%{
+    }
+    50%{
+        transform: translateX(-100%);
+        z-index: 0;
+    }
+    100%{
+        transform: translateX(0);
+        z-index: 0;
+    }
+}
+
+@keyframes rotar_derecha {
+    0%{
+        transform: translateX(0) rotate(0);
+    }
+    100%{
+        transform: translateX(2.5vw) rotate(7deg);
+    }
+}
+
+@keyframes rotar_izquierda {
+    0%{
+        transform: translateX(0) rotate(0);
+    }
+    100%{
+        transform: translateX(-2.5vw) rotate(-7deg);
+    }
+}
+
+@keyframes cambio_fondo {
+    to{}
+    from{
+        background: linear-gradient(0.75turn,#5dcb90, #0ef97c);
+        color: black;
+    }
 }

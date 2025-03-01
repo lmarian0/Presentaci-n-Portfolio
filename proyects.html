@@ -24,6 +24,30 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="proyectos">
+            <article class="contenedor_botones">
+                <div class="botones texto" onclick="izquierda()"><i class="bi bi-caret-left"></i></div>
+            </article>
+            <article class="contenedor_fotos">
+                <div class="fotos" id="foto1"></div>
+                <div class="fotos" id="foto2"></div>
+                <div class="fotos" id="foto3"></div>
+            </article>
+            <article class="contenedor_botones">
+                <div class="botones texto" onclick="derecha()"><i class="bi bi-caret-right"></i></div>
+            </article>
+        </section>
+        <section id="links">
+            <ul>
+                <li id="caja_git">
+                    <a href="" class="texto" id="giturl">Link de GitHub</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
     <footer>
         <ul>
             <li><div><i class="bi bi-envelope texto"></i><p class="texto" id="email" onclick="copiar()">l.mariano.rivera.22@gmail.com</p></div></li>
@@ -34,6 +58,7 @@
     </footer>
 
     <script src="nav.js"></script>
+    <script src="proyects.js"></script>
     <script src="footer.js"></script>
 </body>
 </html>

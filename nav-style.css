@@ -88,7 +88,7 @@ header nav ul li a{
     text-decoration: none;
     color: var(--color-font);
     font-family: Josefin Sanz;
-    font-size: 20px;
+    font-size: 3.3vh;
 }
 
 header nav ul li a:hover{
