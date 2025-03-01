@@ -6,7 +6,6 @@ if(localStorage.getItem("modo")===null){
 
 //Variable light almacena el valor booleano de la cadena almacenada
 let light = JSON.parse(localStorage.getItem("modo"));
-console.log(light)
 
 function cambioDeTema(){
     //Cambio de valor de preferencia
